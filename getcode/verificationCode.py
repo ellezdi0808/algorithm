@@ -13,7 +13,7 @@ class getVerificationCode:
         session = requests.Session()
         resp = session.get(self.url,headers=self.headers,stream=True)
         if resp.status_code == 200:
-            with open("yanzhengma.png",'wb') as f:
+            with open("VerificationCode.png",'wb') as f:
                 shutil.copyfileobj(resp.raw,f)
         else:
             raise Exception("status_code是{}".format(resp.status_code))
@@ -21,8 +21,8 @@ class getVerificationCode:
 
     def get_verification_code(self):
         getVerificationCode.save_verification_code_to_local(self)
-        rc = getcode.RClient('wualisa', '13681656881weu', '86839', '9c25b878b71544f681256c3819dacd1d')
-        im = open(r'yanzhengma.png', 'rb').read()
+        rc = getcode.RClient('若快平台用户名', '若快平台用户密码', '若快平台开发者加的项目对应id', '若快平台开发者加的项目对应key')
+        im = open(r'VerificationCode.png', 'rb').read()
         print (rc.create(im, 3040))
         return rc.create(im, 3040)
 
