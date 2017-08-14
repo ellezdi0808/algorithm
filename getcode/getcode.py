@@ -48,7 +48,3 @@ class RClient:
         r = requests.post('http://api.ruokuai.com/reporterror.json', data=params, headers=self.headers)
         return r.json()
 
-# if __name__ == '__main__':
-#     rc = RClient('wualisa', '13681656881weu', '86839', '9c25b878b71544f681256c3819dacd1d')
-#     im = open(r'yanzhengma.png', 'rb').read()
-#     print (rc.create(im, 3040))
