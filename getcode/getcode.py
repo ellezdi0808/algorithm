@@ -20,7 +20,7 @@ class RClient:
         self.headers = {
             'Connection': 'Keep-Alive',
             'Expect': '100-continue',
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+            'User-Agent': '你的用户信息'
         }
 
     def create(self, im, im_type, timeout=60):
