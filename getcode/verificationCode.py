@@ -29,7 +29,7 @@ class getVerificationCode:
 
 
 if __name__ == '__main__':
-    url = "http://webapi.ecloud.shfc999.com/tool/get_code/2132313"
+    url = "你们获取验证码的链接"
     headers = {
         'Connection': 'Keep-Alive',
         'Expect': '100-continue',
