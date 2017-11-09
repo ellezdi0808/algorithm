@@ -1,4 +1,4 @@
-# 客户端 
+# 客户端 ，基于TCp
 
 # 导入socket库:
 import socket
